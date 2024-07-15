@@ -1,0 +1,17 @@
+<navbar></navbar>
+<header class="hero-unit" id="banner">
+    <div class="container">
+        <div class="well">
+            <h2>The pinterest</h2>
+            <p>Discover recent posts from all users</p>
+        </div>
+    </div>
+</header>
+<div class="container gird">
+    <br>
+    <!--column-width="200"-->
+    <div masonry class="row" reload-on-show>
+        <post post="post" remove-cb="postsCtrl.removeCb(post)" ng-repeat="post in postsCtrl.posts"></post>
+    </div>
+</div>
+<footer></footer>
